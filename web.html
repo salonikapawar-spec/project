@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My File Portal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.file{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.file:last-child{
+    border-bottom:none;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#777;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>📁 My File Portal</h1>
+    <p>Download your documents</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Available Files</h2>
+
+<div class="file">
+    <span>📄 Resume.pdf</span>
+    <a href="files/Resume.pdf" download>
+        <button>Download</button>
+    </a>
+</div>
+
+<div class="file">
+    <span>📄 Notes.pdf</span>
+    <a href="files/Notes.pdf" download>
+        <button>Download</button>
+    </a>
+</div>
+
+<div class="file">
+    <span>📄 Report.docx</span>
+    <a href="files/Report.docx" download>
+        <button>Download</button>
+    </a>
+</div>
+
+<div class="file">
+    <span>📄 Presentation.pptx</span>
+    <a href="files/Presentation.pptx" download>
+        <button>Download</button>
+    </a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+    © 2026 My File Portal
+</footer>
+
+</body>
+</html>
